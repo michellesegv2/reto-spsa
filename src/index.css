@@ -1,13 +1,109 @@
-body {
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway';
+  outline: 0px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+html{
+  height: 100%;
+  background: rgb(150,247,210);
+  background: radial-gradient(circle, rgba(150,247,210,1) 0%, rgba(245,181,252,1) 85%);
+  padding-top: 70px;
+}
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilos Header */
+.header {
+  background-color: #382039;
+  padding: 20px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+.header span{
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
+}
+.header span img{
+  height: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Estilos form */
+.input {
+  margin-bottom: 10px;
+}
+.input label {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.input input:focus {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 1px solid #204969; 
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.center{
+  width: 100%;
+  min-width: 500px;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px 30px;
+}
+@media (max-width: 768px) {
+  .center{
+    padding: 20px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+  html{
+    padding-top: 20px;
+  }
+}
+.btn{
+  color: #fff;
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 15px 0;
+  background-color: #382039;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.person, .data{
+  background-color: #dfdfdf;
+  border: 1.5px solid #382039;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+.data{
+  text-align: center;
 }
